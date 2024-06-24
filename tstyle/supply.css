@@ -1,0 +1,85 @@
+.supply .title {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.supply .supplies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.supply .supplies .item {
+  width: 20rem;
+  display: grid;
+  grid-template-columns: 6rem 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.supply .supplies .item img {
+  width: 100%;
+}
+
+.supply .supplies .supply-title {
+  font-family: 'Roboto Serif', serif;
+  font-weight: 600;
+  font-size: 17px;
+  color: #ffdd1b;
+}
+
+.supply .contract p {
+  margin-top: 4rem;
+  text-align: center;
+  word-break: break-all;
+  line-height: 1;
+
+}
+
+.supply .supplies .text-normal {
+  margin-bottom: 0;
+}
+
+@media(max-width: 1400px) {
+  .supply .supplies .supply-title {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .supply .supplies {
+    width: 95%;
+  }
+
+  .supply .supplies .supply-title {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .supply .supplies {
+    width: 100%;
+  }
+
+  .supply .supplies .supply-title {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 576px) {
+  .supply .supplies {
+    gap: 2rem;
+  }
+
+  .supply .supplies .item {
+    width: 14rem;
+    grid-template-columns: 4rem 1fr;
+  }
+
+  .supply .supplies .supply-title {
+    font-size: 11px;
+  }
+}

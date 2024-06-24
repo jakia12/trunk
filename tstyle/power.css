@@ -1,0 +1,43 @@
+.power {
+  background: url('../img/bg-tranparent.png');
+  background-size: 100% 100%;
+}
+.power .row {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, calc(50% - 2rem));
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.power .throne {
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .power .row {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .power .row {
+    grid-template-columns: 100%;
+  }
+  .power .col-image {
+    display: flex;
+    justify-content: center;
+  }
+  .power .throne {
+    width: 35rem;
+  }
+}
+@media (max-width: 768px) {
+  .power .title,
+  .power .subtitle,
+  .power .text-normal {
+    text-align: center;
+  }
+  .power .throne {
+    width: 25rem;
+  }
+}
